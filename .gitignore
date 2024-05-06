@@ -1,0 +1,5 @@
+protobuf-3.19.4/
+.vscode/
+build/
+bin/
+protobuf-cpp-3.19.4.tar
