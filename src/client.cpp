@@ -3,8 +3,6 @@
 #include "Rpc/RpcClosure.h"
 #include "Rpc/RpcController.h"
 #include "Tcp/TcpClient.h"
-#include "ThreadPool/ThreadPool.h"
-#include <stdio.h>
 
 #include "Proto/hello.pb.h"
 

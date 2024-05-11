@@ -2,7 +2,6 @@
 #define TCP_CLIENT_H
 
 #include "Rpc/RpcChannel.h"
-#include "Rpc/RpcClosure.h"
 #include "Status/Status.h"
 #include <condition_variable>
 #include <map>
@@ -39,7 +38,8 @@ namespace MyTinyRPC
             std::mutex m_mutex_wait_list;
             std::map<std::string, RpcChannel::s_ptr> m_wait_list;
 
-            int bufferSize = 1024 * 10; // 64k，这个是tcp的默认缓冲区大小，如果要更大，则需要窗口缩放
+            const static int bufferSize =
+                1024 * 10; // 64k，这个是tcp的默认缓冲区大小，如果要更大，则需要窗口缩放
     };
 } // namespace MyTinyRPC
 

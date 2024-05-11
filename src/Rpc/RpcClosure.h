@@ -1,11 +1,9 @@
 #ifndef RPCCLOSURE_H
 #define RPCCLOSURE_H
 
-#include "Rpc/RpcController.h"
 #include <functional>
 #include <google/protobuf/service.h>
 #include <memory>
-#include "Status/Status.h"
 
 namespace MyTinyRPC
 {

@@ -1,5 +1,4 @@
 #include "TcpBuffer.h"
-#include "Rpc/PBProtocol.h"
 #include <arpa/inet.h>
 #include <string.h>
 #include <stdexcept>

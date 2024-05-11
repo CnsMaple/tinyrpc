@@ -1,6 +1,5 @@
 #include "RpcClosure.h"
 #include "Log/Log.h"
-#include "Rpc/RpcController.h"
 
 namespace MyTinyRPC
 {

@@ -7,7 +7,6 @@
 #include <map>
 #include <memory>
 #include <queue>
-#include <string>
 
 namespace MyTinyRPC
 {
@@ -37,7 +36,8 @@ namespace MyTinyRPC
             std::condition_variable m_condVar_client_list;
             std::map<int, TcpBuffer::s_ptr> m_client_list;
 
-            int bufferSize = 1024 * 10; // 64k，这个是tcp的默认缓冲区大小，如果要更大，则需要窗口缩放
+            const static int bufferSize =
+                1024 * 10; // 64k，这个是tcp的默认缓冲区大小，如果要更大，则需要窗口缩放
     };
 } // namespace MyTinyRPC
 

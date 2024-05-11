@@ -1,9 +1,7 @@
 #include "Log/Log.h"
 #include "Rpc/PBProtocol.h"
-#include "Rpc/RpcChannel.h"
 #include "Status/Status.h"
 #include "ThreadPool/ThreadPool.h"
-#include <iostream>
 #include <sstream>
 
 void testThreadPoolAndLog()

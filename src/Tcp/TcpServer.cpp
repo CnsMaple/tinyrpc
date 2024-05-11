@@ -1,7 +1,6 @@
 #include "TcpServer.h"
 #include "Log/Log.h"
 #include "Rpc/PBProtocol.h"
-#include "Rpc/RpcChannel.h"
 #include "Rpc/RpcDispatcher.h"
 #include "Tcp/TcpBuffer.h"
 #include "ThreadPool/ThreadPool.h"
@@ -12,7 +11,6 @@
 #include <netinet/tcp.h>
 #include <string.h>
 #include <sys/socket.h>
-#include <thread>
 #include <unistd.h>
 
 namespace MyTinyRPC
